@@ -1,0 +1,247 @@
+matches:
+  - trigger: .iserr
+    replace: .is_err().unwrap()
+  - trigger: webjson
+    replace: web::Json
+  - replace: HttpServer
+    triggers:
+      - httpserver
+      - hserv
+  - replace: HttpRequest
+    triggers:
+      - hreq
+      - httprequest
+  - trigger: mware
+    replace: middleware
+  - replace: env_logger::init();
+    triggers:
+      - envloggerinit
+      - loginit)
+  - replace: std::env::set_var($|$)
+    triggers:
+      - setvar)
+      - stdenvsetvar
+      - ::setvar)
+  - replace: .to_owned()
+    triggers:
+      - .towd)
+      - .toowned
+  - trigger: .uw)
+    replace: .unwrap()
+  - replace: .unwrap_or_else($|$)
+    triggers:
+      - .unwraporelse
+      - .uworelse)
+  - trigger: .andthen)
+    replace: .and_then($|$)
+  - trigger: .hdr)
+    replace: .headers()
+  - replace: .to_str()
+    triggers:
+      - .tostr
+      - .tos)
+  - replace: "&mut"
+    triggers:
+      - mut7
+      - 7mut
+      - mu7
+  - replace: "mut ref "
+    triggers:
+      - "mutref "
+      - "rmut "
+  - replace: "&self"
+    trigger: 7slf
+  - replace: "*self"
+    trigger: 8slf
+  - replace: "&str"
+    triggers:
+      - 7str
+      - str7
+  - replace: BufReader
+    trigger: bufr;
+  - replace: format!("{}", $|$)
+    trigger: fmt!
+  - replace: fn $|$()
+    trigger: fn)
+  - replace: "fn main() {\n$|$"
+    triggers:
+      - fnm/
+      - main`
+  - replace: io::stdin()
+    trigger: stdin)
+  - replace: let mut $|$;
+    trigger: lm;
+  - replace: let $|$;
+    trigger: l;;
+  - replace: assert_eq!($|$)
+    trigger: eq!
+  - replace: print!($|$)
+    trigger: pr!
+  - replace: println!("{}", $|$);
+    triggers:
+      - prl!
+      - prln)
+      - prln!
+  - replace: "String::"
+    trigger: "S::"
+  - replace: .pust_str($|$)
+    trigger: .pst
+  - replace: "{{correct_fn}}"
+    trigger: append?!
+    vars:
+      - name: correct_fn
+        type: match
+        params:
+          trigger: .pst
+  - replace: std::fs$|$;
+    trigger: stdfs;;
+  - replace: std::io
+    trigger: stdio/
+  - replace: std::path$|$;
+    trigger: stdpath;;
+  - replace: String::from($|$)
+    trigger: Sfm)
+  - replace: String::new($|$)
+    trigger: Snew)
+  - replace: vec![$|$]
+    triggers:
+      - v!
+      - vec!
+  - replace: Vec<$|$>
+    triggers:
+      - V>
+      - V/
+  - replace: Vec::new()
+    trigger: Vn
+  - replace: String::with_capacity($|$)
+    trigger: Scap)
+  - replace: .as_string()
+    trigger: .astr)
+  - replace: .as_pointer()
+    triggers:
+      - .asptr)
+      - .aspoint
+  - replace: BufStream
+    trigger: BS
+  - replace: .write($|$)
+    trigger: .w)
+  - replace: Ok($|$)
+    trigger: ok)
+  - replace: Error(e)
+    trigger: err)
+  - replace: .read_line($|$)
+    triggers:
+      - .rln)
+      - .rl)
+  - replace: .into_bytes()
+    trigger: .intob
+  - replace: .lines()
+    trigger: .lns)
+  - replace: .nth($|$).unwrap();
+    triggers:
+      - .nth)
+      - .n)
+  - replace: .next().unwrap()
+    triggers:
+      - .nx)
+      - .nxt
+  - replace: .split_whitespace()
+    triggers:
+      - .sp)
+      - .spws)
+  - replace: self
+    trigger: slf
+  - replace: Self
+    trigger: Slf
+  - replace: self.
+    trigger: s./
+  - replace: this.
+    trigger: t./
+  - replace: use std::$|$
+    trigger: ustd
+  - replace: std::io::Result<$|$>
+    triggers:
+      - stdioresult
+      - stdioR
+  - replace: web::get()
+    trigger: webget
+  - replace: "#[derive($|$)]"
+    trigger: 3der/
+  - replace: "#[derive(Debug$|$)]"
+    trigger: 3dD
+  - replace: "// TODO: "
+    trigger: "#todo "
+  - replace: $
+    trigger: 4§
+  - replace: "struct "
+    trigger: sc/
+  - replace: "pub {{output}} "
+    trigger: psc/
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: sc/
+  - replace: "pub fn "
+    triggers:
+      - pfn/
+      - "pfn "
+  - replace: "|$|$|"
+    trigger: "||"
+  - replace: usize
+    trigger: usz
+  - replace: ().
+    trigger: (.
+  - replace: ();
+    trigger: "(; "
+  - replace: );
+    trigger: ; )
+  - replace: (),
+    trigger: "(, "
+  - replace: ($|$)
+    trigger: ((
+  - replace: ()
+    trigger: ))
+  - replace: "[$|$]"
+    trigger: "[["
+  - replace: "&[$|$]"
+    trigger: 7[]
+  - replace: <$|$>
+    trigger: <`
+  - replace: "{$|$}"
+    triggers:
+      - "{`"
+      - "{{"
+  - replace: "{ $|$ }"
+    trigger: "{ {"
+  - replace: "{}"
+    trigger: "}}"
+  - replace: "[$|$;]"
+    trigger: "[;"
+  - replace: <_, $|$>
+    trigger: <-
+  - replace: ::new($|$)
+    trigger: ..new
+  - replace: extern crate $|$;
+    trigger: xc;
+  - replace: use $|$;
+    trigger: use;
+  - replace: Option
+    trigger: opn
+  - replace: Some($|$)
+    trigger: Sm)
+  - replace: "::"
+    trigger: ..;
+  - replace: "\"$|$\""
+    trigger: "\"\""
+  - replace: "for $|$ in "
+    trigger: frn
+  - replace: html! {$|$}
+    triggers:
+      - ht1
+      - ht!
+  - replace: <div>$|$</div>
+    trigger: div/
+  - replace: <div class=classes!($|$)></div>
+    trigger: divc/
+filter_title: com.sublimetext.3|com.googlecode.iterm2

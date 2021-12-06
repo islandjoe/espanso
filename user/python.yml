@@ -1,0 +1,260 @@
+matches:
+  - trigger: pdisnull)
+    replace: pd.isnull($|$)
+  - trigger: nplo)
+    replace: np.load($|$)
+  - trigger: npw)
+    replace: np.where($|$)
+  - trigger: ppsca)
+    replace: pp.scatter($|$)
+  - trigger: ppax)
+    replace: pp.axes()
+  - trigger: pcacom
+    replace: pca.components_
+  - trigger: imLogReg`
+    replace: from sklearn.linear_model import LogisticRegression
+  - trigger: imLinReg`
+    replace: from sklearn.linear_model import LinearRegression
+  - trigger: LogReg)
+    replace: LogisticRegression($|$)
+  - trigger: .h)
+    replace: .head($|$)
+  - trigger: .sortval
+    replace: .sort_values($|$)
+  - trigger: npar)
+    replace: np.array($|$)
+  - trigger: np0)
+    replace: np.zeros(($|$))
+  - trigger: np1)
+    replace: np.ones(($|$))
+  - trigger: nparg)
+    replace: np.arange($|$)
+  - trigger: npwr)
+    replace: np.where($|$)
+  - trigger: npargs)
+    replace: np.argsort($|$)
+  - trigger: withopen)
+    replace: "with open($|$) as f:"
+  - trigger: npsav)
+    replace: np.save($|$)
+  - trigger: npranran)
+    replace: np.random.random($|$)
+  - trigger: .shp
+    replace: .shape
+  - triggers: 
+      - .rshp)
+      - .reshp)
+    replace: .reshape(($|$))
+  - triggers: 
+      - ppxlab)
+      - ppxl)
+    replace: pp.xlabel($|$)
+  - triggers: 
+      - ppylab)
+      - ppyl)
+    replace: pp.ylabel($|$)
+  - trigger: ppti)
+    replace: pp.title($|$)
+  - triggers: 
+      - pps)
+      - pp.s)
+    replace: pp.show()
+  - triggers: 
+    - .rcparams
+    - .rcpars
+    replace: .rcParams[$|$]
+  - trigger: figsz
+    replace: "\"figure.figsize\""
+  - trigger: .xfm)
+    replace: .transform($|$)
+  - trigger: imgfromar)
+    replace: Image.fromarray($|$)
+  - trigger: imimg`
+    replace: from PIL import Image
+  - trigger: "if:"
+    replace: "if $|$:"
+  - trigger: pdS)
+    replace: pd.Series($|$)
+  - trigger: .cols
+    replace: .columns
+  - trigger: .desc)
+    replace: .describe($|$)
+  - trigger: .descall)
+    replace: .describe(include='all')
+  - trigger: .gby)
+    replace: .groupby($|$)
+  - trigger: cols=
+    replace: columns=
+    word: true
+  - triggers: 
+      - impp`
+      - implt`
+    replace: import matplotlib.pyplot as pp
+  - triggers: 
+    - ppp)
+    - pppl)
+    replace: pp.plot($|$)
+  - trigger: pp.l)
+    replace: pp.legend(loc="$|$")
+  - trigger: im`
+    replace: import 
+  - triggers: 
+    - nprannor)
+    - npran.nor)
+    replace: np.random.normal($|$)
+  - trigger: impca`
+    replace: from sklearn.decomposition import PCA
+  - trigger: pdtodt)
+    replace: pd.to_datetime($|$)
+  - trigger: pdcsv)
+    replace: pd.read_csv($|$)
+  - trigger: pdsql)
+    replace: pd.read_sql($|$)
+  - trigger: imdt`
+    replace: import datetime as dt
+  - trigger: toseries)
+    replace: to_series()
+  - trigger: "DF`"
+    replace: "DataFrame"
+  - triggers: 
+      - pddf)
+      - pdDF)
+    replace: pd.DataFrame($|$)
+  - trigger: dfm`
+    replace: dataframe
+  - trigger: nprand)
+    replace: np.random.rand($|$)
+  - trigger: npchoice)
+    replace: np.random.choice($|$)
+  - trigger: "impd`"
+    replace: "import pandas as pd"
+  - trigger: "imnp`"
+    replace: "import numpy as np"
+  - trigger: "jupins`"
+    replace: "import sys
+!{sys.executable} -m pip install "
+  - trigger: "defs:"
+    replace: "def $|$(self):"
+  - trigger: "deft:"
+    replace: "def test_$|$(self):"
+  - replace: from enum import Enum
+    trigger: import Enum`
+  - replace: from typing import Tuple
+    trigger: import Tuple`
+  - replace: self.
+    trigger: s.`
+  - replace: open('$|$', 'r')
+    trigger: openr)
+  - replace: open('$|$', 'w')
+    trigger: openw)
+  - replace: "# TASK "
+    trigger: "#task"
+  - replace: "# FIXME "
+    trigger: "#fixme"
+  - replace: "# TODO "
+    trigger: "#todo"
+  - replace: "# BUG "
+    trigger: "#bug"
+  - replace: "=False"
+    trigger: "=F "
+  - replace: "=True"
+    trigger: "=T "
+  - replace: "def $|$():"
+    trigger: "def:"
+  - replace: .__class__
+    trigger: .--class--
+  - replace: "__next__(self):"
+    trigger: --next--
+  - replace: "__call__(self, arg):"
+    trigger: --call--
+  - replace: "__contains__($|$):"
+    trigger: --contains--
+  - replace: .__dict__
+    trigger: .--dict--
+  - replace: __set__(self, instance, value)
+    trigger: --set--
+  - replace: "__enter__(self):"
+    trigger: --enter--
+  - replace: "__exit__(self, ex_type, ex_value, ex_traceback):"
+    trigger: --exit--
+  - replace: "__getitem__(self, index):"
+    trigger: --getitem--
+  - replace: "__get__(self, $|$):"
+    trigger: --get--
+  - replace: "__init__(self$|$):"
+    trigger: --init--
+  - trigger: Nn`
+    replace: None
+  - trigger: pdcat)
+    replace: pd.concat($|$)
+  - replace: "__iter__($|$):"
+    trigger: --iter--
+  - replace: .__iter__
+    trigger: .--iter--
+  - replace: "def __iter__(self):"
+    trigger: def --iter--
+  - replace: "__len__(self):"
+    trigger: --len--
+  - replace: "__str__(self):"
+    trigger: --str--
+  - replace: .__name__
+    trigger: .--name--
+  - replace: "\"\"\"$|$\"\"\""
+    triggers:
+      - "\"p`"
+      - ;ds
+      - "\"ds"
+  - replace: _
+    trigger: =-
+  - replace: "if __name__ == '__main__':"
+    trigger: ifname
+  - replace: "lambda$|$: "
+    triggers:
+      - "la:"
+      - "fx:"
+  - replace: "*args"
+    trigger: 8arg
+  - replace: "**kwargs"
+    trigger: 88kw
+  - replace: "{$|$}"
+    trigger: "{{"
+  - replace: ($|$)
+    trigger: ((
+  - replace: "\"$|$\""
+    trigger: "\"\""
+  - replace: "'$|$'"
+    trigger: "''"
+  - replace: range($|$)
+    trigger: rg)
+  - replace: "for $|$:"
+    trigger: "for:"
+  - replace: "*"
+    trigger: 8§
+  - replace: "**"
+    trigger: 88§
+  - replace: "from $|$ import "
+    trigger: fmim
+  - replace: print(f"$|$")
+    triggers:
+      - prf)
+      - pf)
+  - replace: "print($|$)"
+    trigger: "pr)"
+  - replace: return
+    trigger: "re\\"
+  - trigger: flnm
+    replace: filename
+  - replace: "class $|$:"
+    trigger: "cls:"
+  - replace: "from $|$ import "
+    trigger: "fr . im/"
+  - replace: "from itertools import "
+    trigger: "fr it im/"
+  - replace: "import itertools as it"
+    trigger: "im as it/"
+  - trigger: .lnsp)
+    replace: .linspace($|$)
+  - trigger: .fig)
+    replace: .figure()
+filter_class: co.fluder.FSNotes|com.googlecode.iterm2|io.nteract.nteract|com.digitalmoksha.versatil|blog.micro.mac|de.zettelkasten.TheArchive|xyz.compendium.pineapple|com.microsoft.VSCode
+parent: default

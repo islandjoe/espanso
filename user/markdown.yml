@@ -1,0 +1,9 @@
+filter_title: "com.digitalmoksha.versatil"
+
+matches:
+
+  - trigger: "imga/"
+    replace: "<img src=\"assets/{{clipboard}}\" alt=\"\"/>"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"

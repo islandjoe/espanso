@@ -1,0 +1,943 @@
+matches:
+  - trigger: dimn`
+    replace: dimension
+    propagate_case: true
+  - trigger: dmnl`
+    replace: dimensional
+    propagate_case: true
+  - trigger: gent`
+    replace: generate
+    propagate_case: true
+  - trigger: genv`
+    replace: generative
+    propagate_case: true
+  - trigger: genlz`
+    replace: generalize
+    propagate_case: true
+  - trigger: gen`
+    replace: generation
+    propagate_case: true
+  - trigger: genl`
+    replace: general
+    propagate_case: true
+  - trigger: lbl`
+    replace: label
+    propagate_case: true
+  - trigger: corrd`
+    replace: correlated
+    propagate_case: true
+  - trigger: r``
+    replace: are
+    propagate_case: true
+  - trigger: sci`
+    replace: science
+    propagate_case: true
+  - trigger: disp`
+    replace: display
+    propagate_case: true
+  - trigger: dispg`
+    replace: displaying
+    propagate_case: true
+  - trigger: bkup`
+    replace: backup
+    propagate_case: true
+  - trigger: dir`
+    replace: directory
+    propagate_case: true
+  - trigger: locn`
+    replace: location
+    propagate_case: true
+  - trigger: sv`
+    replace: save
+    propagate_case: true
+  - trigger: svg`
+    replace: saving
+    propagate_case: true
+  - trigger: corrn`
+    replace: correlation
+    propagate_case: true
+  - trigger: corrt`
+    replace: correlate
+    propagate_case: true
+  - trigger: tht
+    replace: that
+    word: true
+  - trigger: pwr`
+    replace: power
+    propagate_case: true
+  - trigger: smry`
+    replace: summary
+    propagate_case: true
+  - trigger: smrz`
+    replace: summarize
+    propagate_case: true
+  - trigger: smrzn`
+    replace: summarization
+    propagate_case: true
+  - trigger: smrys`
+    replace: summaries
+    propagate_case: true
+  - trigger: rd`
+    replace: read
+    propagate_case: true
+  - trigger: rdg`
+    replace: reading
+    propagate_case: true
+  - trigger: rdr`
+    replace: reader
+    propagate_case: true
+  - trigger: thn
+    replace: than
+    word: true
+  - trigger: mmry`
+    replace: memory
+    propagate_case: true
+  - trigger: mmrys`
+    replace: memories
+    propagate_case: true
+  - trigger: mmrz`
+    replace: memorize
+    propagate_case: true
+  - trigger: mmrzn`
+    replace: memorization
+    propagate_case: true
+  - trigger: sttx`
+    replace: statistics
+    propagate_case: true
+  - trigger: sttxl`
+    replace: statistical
+    propagate_case: true
+  - trigger: sgnfnc
+    replace: significance
+    propagate_case: true
+    word: true
+  - trigger: sgnfnct
+    propagate_case: true
+    replace: significant
+    word: true
+  - trigger: dscrptn
+    replace: description
+    word: true
+    propagate_case: true
+  - trigger: descb`
+    replace: describe
+    propagate_case: true
+  - trigger: descg`
+    replace: describing
+    propagate_case: true
+  - trigger: nw` 
+    replace: network
+    propagate_case: true
+  - trigger: dgm`
+    replace: diagram
+    propagate_case: true
+  - trigger: elt`
+    replace: element
+    propagate_case: true
+  - trigger: valdn`
+    replace: validation
+    propagate_case: true
+  - trigger: valdt`
+    replace: validate
+    propagate_case: true
+  - trigger: avg`
+    replace: average
+    propagate_case: true
+  - trigger: col`
+    replace: column
+    propagate_case: true
+  - trigger: evt`
+    replace: event
+    propagate_case: true
+  - trigger: cols`
+    replace: columns
+    propagate_case: true
+  - trigger: yur
+    replace: your
+    propagate_case: true
+    word: true
+  - trigger: youre
+    replace: "you're"
+    propagate_case: true
+    word: true
+  - trigger: blnc
+    replace: balance
+    propagate_case: true
+    word: true
+  - trigger: sxxs`
+    replace: success
+    propagate_case: true
+  - trigger: kbd`
+    replace: keyboard
+    propagate_case: true
+  - trigger: "wc/"
+    replace: which
+    propagate_case: true
+  - trigger: ture
+    replace: true
+    propagate_case: true
+    word: true
+  - trigger: js`
+    replace: Javascript
+  - trigger: srch`
+    replace: search
+    propagate_case: true
+  - trigger: srchr`
+    replace: searcher
+    propagate_case: true
+  - trigger: srchg`
+    replace: searching
+    propagate_case: true
+  - trigger: predn`
+    replace: prediction
+    propagate_case: true
+  - trigger: ensbl
+    replace: ensemble
+    propagate_case: true
+  - trigger: xform
+    replace: transform
+    propagate_case: true
+  - trigger: distro`
+    replace: distribution
+    propagate_case: true
+  - trigger: biz`
+    replace: business
+    propagate_case: true
+  - trigger: acctg`
+    replace: accounting
+    propagate_case: true
+  - trigger: bldg`
+    replace: building
+    propagate_case: true
+  - trigger: selt`
+    replace: select
+    propagate_case: true
+  - trigger: img`
+    replace: image
+    propagate_case: true
+  - trigger: normd`
+    replace: normalized
+    propagate_case: true
+  - trigger: normz`
+    replace: normalize
+    propagate_case: true
+  - trigger: seld`
+    replace: selected
+    propagate_case: true
+  - trigger: seln`
+    replace: selection
+    propagate_case: true
+  - trigger: crt`
+    replace: create
+    propagate_case: true
+  - trigger: crtg`
+    replace: creating
+    propagate_case: true
+  - trigger: crtn`
+    replace: creation
+    propagate_case: true
+  - trigger: crtr`
+    replace: creator
+    propagate_case: true
+  - trigger: dont
+    replace: "don't"
+    word: true
+    propagate_case: true
+  - trigger: cant
+    replace: "can't"
+    word: true
+    propagate_case: true
+  - trigger: prncpl
+    replace: principle
+    word: true
+    propagate_case: true
+  - trigger: prncpal
+    replace: principal
+    word: true
+    propagate_case: true
+  - trigger: prj`
+    replace: project
+    propagate_case: true
+  - trigger: res`
+    replace: response
+    propagate_case: true
+  - trigger: req`
+    replace: request
+    propagate_case: true
+  - trigger: vizn`
+    replace: visualization
+    propagate_case: true
+  - trigger: vizz`
+    replace: visualize
+    propagate_case: true
+  - trigger: vizg`
+    replace: visualizing
+    propagate_case: true
+  - trigger: vizl`
+    replace: visual
+    propagate_case: true
+  - trigger: lang`
+    replace: language
+    propagate_case: true
+  - trigger: grf`
+    replace: graph
+    propagate_case: true
+  - trigger: gfx`
+    replace: graphics
+  - trigger: grfl`
+    replace: graphical
+    propagate_case: true
+  - triggers: 
+      - fndn`
+      - fdn`
+    replace: foundation
+    propagate_case: true
+  - trigger: viz`
+    replace: visual
+    propagate_case: true
+  - trigger: calcn`
+    replace: calculation
+    propagate_case: true
+  - trigger: calcr`
+    replace: calculator
+    propagate_case: true
+  - trigger: calct`
+    replace: calculate
+    propagate_case: true
+  - trigger: ML`
+    replace: Machine Learning
+  - trigger: lrn`
+    replace: learn
+    propagate_case: true
+  - trigger: contnuos
+    replace: continuous
+    propagate_case: true
+  - trigger: orgz`
+    replace: organize
+    propagate_case: true
+  - trigger: orgzg`
+    replace: organizing
+    propagate_case: true
+  - trigger: org`
+    replace: organization
+    propagate_case: true
+  - trigger: lrng`
+    replace: learning
+    propagate_case: true
+  - trigger: ps`
+    replace: process
+    propagate_case: true
+  - trigger: psg`
+    replace: processing
+    propagate_case: true
+  - trigger: whats 
+    replace: what's 
+    propagate_case: true
+  - trigger: ctx`
+    replace: context
+    propagate_case: true
+  - trigger: ctxl`
+    replace: contextual
+    propagate_case: true
+  - trigger: ctxlz`
+    replace: contextualize
+    propagate_case: true
+  - trigger: pbm`
+    replace: problem
+    propagate_case: true
+  - trigger: stmt`
+    replace: statement
+    propagate_case: true
+  - trigger: anltx`
+    replace: analytics
+    propagate_case: true
+  - trigger: ppl`
+    replace: people
+    propagate_case: true
+  - trigger: enuf`
+    replace: enough
+    propagate_case: true
+  - trigger: pt`
+    replace: point
+    propagate_case: true
+  - trigger: ptr`
+    replace: pointer
+    propagate_case: true
+  - trigger: ptg`
+    replace: pointing
+    propagate_case: true
+  - trigger: opt`
+    replace: option
+    propagate_case: true
+  - trigger: "dstnc "
+    replace: distance
+    propagate_case: true
+  - trigger: vert`
+    replace: vertical
+    propagate_case: true
+  - trigger: hori`
+    replace: horizontal
+    propagate_case: true
+  - trigger: a``
+    replace: "and "
+    propagate_case: true
+  - trigger: async`
+    replace: asynchronous
+    propagate_case: true
+  - trigger: syncz`
+    replace: synchronize
+    propagate_case: true
+  - trigger: sync`
+    replace: synchronous
+    propagate_case: true
+  - trigger: heirarchy
+    replace: hierarchy
+    propagate_case: true
+    word: true
+  - trigger: consdrtn`
+    replace: consideration
+    propagate_case: true
+  - trigger: t``
+    replace: "the "
+    propagate_case: true
+  - trigger: devops
+    replace: DevOps
+    word: true
+  - trigger: abt`
+    replace: about
+    propagate_case: true
+  - trigger: sys`
+    replace: system
+    propagate_case: true
+  - trigger: entrprs
+    replace: enterprise
+    propagate_case: true
+  - trigger: soln`
+    replace: solution
+  - trigger: cmd`
+    replace: command
+  - replace: relationship
+    triggers: 
+      - relnp`
+      - relp`
+    propagate_case: true
+  - replace: quantity
+    trigger: qty`
+    propagate_case: true
+  - trigger: prepn`
+    replace: preparation
+    propagate_case: true
+  - replace: quality
+    trigger: qlty`
+    propagate_case: true
+  - trigger: qltv`
+    replace: qualitative
+    propagate_case: true
+  - trigger: tbl`
+    replace: table
+    propagate_case: true
+  - replace: component
+    trigger: cpnt`
+    propagate_case: true
+  - replace: strategy
+    propagate_case: true
+    trigger: strat`
+  - trigger: ft`
+    replace: feature
+    propagate_case: true
+  - trigger: strats`
+    replace: strategies
+    propagate_case: true
+  - triggers: 
+      - ftg`
+      - ftrg`
+    replace: featuring
+    propagate_case: true
+  - trigger: dmg`
+    replace: damage
+    propagate_case: true
+  - replace: interface
+    trigger: ifc`
+    propagate_case: true
+  - replace: standard
+    trigger: std`
+    propagate_case: true
+  - trigger: pkg`
+    replace: package
+    propagate_case: true
+  - replace: frontend
+    trigger: frontned
+  - replace: hardware
+    trigger: hw/
+    word: true
+  - replace: knowledge
+    trigger: knwldg
+  - replace: something
+    trigger: smth
+  - replace: demonstration
+    trigger: demonstraten
+  - replace: demonstrate
+    trigger: demo`
+  - replace: because
+    triggers:
+      - bcoz
+      - coz`
+      - bc`
+    propagate_case: true
+  - replace: management
+    trigger: mgt`
+    propagate_case: true
+  - trigger: arch`
+    replace: architecture
+    propagate_case: true
+  - replace: architect
+    trigger: archt`
+    propagate_case: true
+  - trigger: commt`
+    replace: communicate
+    propagate_case: true
+  - trigger: commn`
+    replace: communication
+    propagate_case: true
+  - trigger: num`
+    replace: number
+    propagate_case: true
+  - replace: engineering
+    trigger: engg`
+    propagate_case: true
+  - replace: engineer
+    trigger: engr`
+    propagate_case: true
+  - replace: technology
+    trigger: tech`
+    propagate_case: true
+  - trigger: techs`
+    replace: technologies
+    propagate_case: true
+  - replace: technique
+    trigger: teq`
+    propagate_case: true
+  - trigger: var`
+    replace: variable
+    propagate_case: true
+  - replace: evaluate
+    trigger: evalt`
+    propagate_case: true
+  - replace: evaluation
+    trigger: evaln`
+    propagate_case: true
+  - replace: evaluate
+    trigger: eval`
+    propagate_case: true
+  - replace: replace
+    trigger: rplc`
+    propagate_case: true
+  - trigger: rplcg`
+    replace: replacing
+    propagate_case: true
+  - trigger: "rep:"
+    replace: "replace: "
+  - trigger: fwk`
+    replace: framework
+    propagate_case: true
+  - replace: alternative
+    trigger: altv`
+    propagate_case: true
+  - replace: alternate
+    trigger: alt`
+    propagate_case: true
+  - trigger: regn`
+    replace: regression
+    propagate_case: true
+  - trigger: clsfn`
+    replace: classification
+    propagate_case: true
+  - trigger: dcn`
+    replace: decision
+    propagate_case: true
+  - replace: size
+    trigger: sz`
+    propagate_case: true
+  - replace: UTC
+    trigger: utc~
+  - replace: algorithm
+    trigger: algo`
+    propagate_case: true
+  - replace: "```rust\n$|$\n```"
+    trigger: "`rs "
+  - replace: "```python\n$|$\n```"
+    trigger: "`py "
+  - replace: receive
+    trigger: rcv`
+    propagate_case: true
+  - replace: message
+    trigger: msg`
+    propagate_case: true
+  - replace: "[$|$]"
+    trigger: "[["
+  - replace: "{{output}}_"
+    trigger: ==-
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: =-
+  - replace: _
+    trigger: =-
+  - replace: "&"
+    triggers:
+      - 7§
+      - 7`
+  - replace: "*"
+    trigger: x`
+  - replace: +
+    trigger: =§
+  - replace: "{{filename}}"
+    trigger: t,.
+    vars:
+      - name: filename
+        type: date
+        params:
+          format: "%Y%m%d.%H%M.%S"
+  - trigger: fmt`
+    replace: format
+    propagate_case: true
+  - trigger: fmtg`
+    replace: formatting
+    propagate_case: true
+  - trigger: fmtd`
+    replace: formatted
+  - replace: "{{output}}"
+    trigger: :shell
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: echo Hello from your shell
+  - replace: decorator
+    trigger: decorr`
+  - replace: arguments
+    trigger: args`
+    propagate_case: true
+  - trigger: grp`
+    replace: group
+    propagate_case: true
+  - trigger: grpd`
+    replace: grouped
+    propagate_case: true
+  - trigger: grpg`
+    replace: grouping
+    propagate_case: true
+  - replace: argument
+    trigger: arg`
+    propagate_case: true
+  - replace: _
+    triggers:
+      - -`
+      - -§
+  - replace: __
+    triggers:
+      - --`
+      - --§
+  - replace: attribute
+    trigger: attr`
+    propagate_case: true
+  - replace: value
+    trigger: val`
+    propagate_case: true
+  - trigger: sw/ 
+    replace: software
+    propagate_case: true
+  - triggers: 
+      - inxn`
+      - ixn`
+    replace: interaction
+    propagate_case: true
+  - triggers: 
+      - inxv`
+      - ixv`
+    replace: interactive
+    propagate_case: true
+  - trigger: spvs`
+    replace: supervise
+    propagate_case: true
+  - trigger: assocn`
+    replace: association
+    propagate_case: true
+  - trigger: assoct`
+    replace: associate
+    propagate_case: true
+  - replace: "#"
+    trigger: 3§
+  - replace: object
+    trigger: obj`
+  - replace: "[^f{{footnoteid}}]"
+    trigger: "[fn]"
+    vars:
+      - name: footnoteid
+        type: date
+        params:
+          format: "%Y%m%d%H%M%S"
+  - replace: "- trigger: \"$|$\"replace: "
+    trigger: -tgr
+  - replace: function
+    trigger: fn`
+    propagate_case: true
+  - propagate_case: true
+    replace: high
+    trigger: hi`
+    word: true
+  - replace: inclusive
+    trigger: inclsv
+    propagate_case: true
+  - propagate_case: true
+    replace: with
+    trigger: w/
+    word: true
+  - replace: piece
+    trigger: pc`
+    propagate_case: true
+  - replace: pieces
+    trigger: pcs`
+    propagate_case: true
+  - replace: range
+    trigger: rg`
+    propagate_case: true
+  - trigger: freq`
+    replace: frequency
+    propagate_case: true
+  - trigger: freqs`
+    replace: frequencies
+    propagate_case: true
+  - trigger: pctg`
+    replace: percentage
+    propagate_case: true
+  - trigger: pct`
+    replace: percent
+    propagate_case: true
+  - trigger: dset`
+    replace: dataset
+    propagate_case: true
+  - replace: database
+    trigger: db`
+    propagate_case: true
+  - trigger: dt`
+    replace: data
+    propagate_case: true
+  - trigger: mng`
+    replace: manage
+    propagate_case: true
+  - trigger: mgg`
+    replace: managing
+    propagate_case: true
+  - trigger:  mk`
+    replace: make
+    propagate_case: true
+  - trigger: mkg`
+    replace: making
+    propagate_case: true
+  - trigger: xplct
+    replace: explicit
+    propagate_case: true
+  - trigger: imprv`
+    replace: improve
+    propagate_case: true
+  - trigger: imprvt`
+    replace: improvement
+    propagate_case: true
+  - trigger: imprvg`
+    replace: improving
+    propagate_case: true
+  - trigger: yu
+    replace: you
+    word: true
+    propagate_case: true
+  - replace: manager
+    trigger: mgr`
+    propagate_case: true
+  - trigger: mvt`
+    replace: movement
+    propagate_case: true
+  - replace: move
+    trigger: mv`
+    propagate_case: true
+  - replace: "*"
+    triggers:
+      - 8§
+      - 8`
+  - replace: trigger
+    trigger: tggr
+    propagate_case: true
+  - trigger: impl`
+    replace: implement
+    propagate_case: true
+  - trigger: impln`
+    replace: implementation
+    propagate_case: true
+  - replace: replace
+    trigger: rplc
+    propagatecase: true
+  - replace: cargo
+    trigger: cgo/
+    propagate_case: true
+  - replace: target
+    trigger: trgt
+    propagate_case: true
+  - replace: " of the "
+    trigger: " ot "
+  - replace: debug
+    trigger: dbg`
+    propagate_case: true
+  - trigger: catg`
+    replace: category
+    propagate_case: true
+  - trigger: catgs`
+    replace: categories
+    propagate_case: true
+  - trigger: catgl`
+    replace: categorical
+    propagate_case: true
+  - trigger: svc`
+    replace: service
+    propagate_case: true
+  - trigger: src`
+    replace: source
+    propagate_case: true
+  - trigger: srcg`
+    replace: sourcing
+    propagate_case: true
+  - trigger: ctl`
+    replace: control
+    propagate_case: true
+  - trigger: ctlr`
+    replace: controller
+    propagate_case: true
+  - trigger: ctlg`
+    replace: controlling
+    propagate_case: true
+  - trigger: btwn`
+    replace: between
+    propagate_case: true
+  - replace: difference
+    trigger: diff`
+    propagate_case: true
+  - replace: different
+    trigger: difft`
+    propagate_case: true
+  - replace: action
+    trigger: xn`
+    propagate_case: true
+  - trigger: addrsg
+    replace: addressing
+    propagate_case: true
+  - trigger: impt`
+    replace: important
+    propagate_case: true
+  - trigger: imptc`
+    replace: importance
+    propagate_case: true
+  - triggers: 
+      - wrkshp
+      - "ws/ "
+    replace: workshop
+    propagate_case: true
+  - trigger: mtx`
+    replace: matrix
+    propagate_case: true
+  - trigger: sq`
+    replace: square
+    propagate_case: true
+  - trigger: len`
+    replace: length
+    propagate_case: true
+  - trigger: abv`
+    replace: above
+    propagate_case: true
+  - triggers:
+    - abvn`
+    - abbvn`
+    replace: abbreviation
+    propagate_case: true
+  - trigger: ot``
+    replace: "of the "
+  - trigger: mulpl`
+    replace: multiple
+    propagate_case: true
+  - trigger: mulpy`
+    replace: multiply
+    propagate_case: true
+  - trigger: mulpn`
+    replace: multiplication
+    propagate_case: true
+  - trigger: mulpr`
+    replace: multiplier
+    propagate_case: true
+  - trigger: ff.`
+    replace: following
+    propagate_case: true
+  - trigger: lib`
+    replace: library
+    propagate_case: true
+  - trigger: libs`
+    replace: libraries
+    propagate_case: true
+  - trigger: pgm`
+    replace: program
+    propagate_case: true
+  - trigger: pgmr`
+    replace: programmer
+    propagate_case: true
+  - trigger: pgmg`
+    replace: programming
+    propagate_case: true
+  - trigger: info`
+    replace: information
+    propagate_case: true
+  - replace: application
+    trigger: app`
+    propagate_case: true
+  - trigger: pttn`
+    replace: pattern
+    propagate_case: true
+  - replace: ö
+    trigger: ":o:"
+  - replace: Ö
+    trigger: ":O:"
+  - replace: ä
+    trigger: ":a:"
+  - replace: Ä
+    trigger: ":A:"
+  - trigger: sec`
+    replace: second
+    propagate_case: true
+  - trigger: secs`
+    replace: seconds
+    propagate_case: true
+  - trigger: dgn`
+    replace: design
+    propagate_case: true
+  - trigger: devr`
+    replace: developer
+    propagate_case: true
+  - trigger: devt`
+    replace: development
+    propagate_case: true
+  - trigger: devg`
+    replace: developing
+    propagate_case: true
+  - trigger: dev`
+    replace: develop
+    propagate_case: true
+  - trigger: specn`
+    replace: specification
+    propagate_case: true
+  - trigger: specy`
+    replace: specify
+    propagate_case: true
+  - trigger: reqr`
+    replace: require
+    propagate_case: true
+  - trigger: reqrt`
+    replace: requirement
+    propagate_case: true
+secure_input_notification: false

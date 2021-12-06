@@ -1,0 +1,130 @@
+backend: Auto
+filter_title: com.googlecode.iterm2|co.zeit.hyper|com.apple.Safari
+matches:
+  - replace: "floaterm "
+    trigger: ft/
+  - replace: ":FloatermNew "
+    trigger: :ftn
+  - replace: :PlugUpdate
+    trigger: :plugup
+  - replace: ":PlugInstall "
+    trigger: :plugins
+  - replace: ":CocCommand "
+    triggers:
+      - :coccmd
+      - :cocmd
+  - replace: ":CocList "
+    trigger: :cocls
+  - replace: $it
+    triggers:
+      - 4it
+      - 4ti
+  - replace: "$acc "
+    trigger: 4acc
+  - replace: $($|$)
+    triggers:
+      - $))
+      - 4))
+  - replace: "build-string "
+    trigger: buildstr
+  - replace: $false
+    triggers:
+      - 4flase
+      - 4false
+      - 4flse
+  - replace: $true
+    triggers:
+      - 4true
+      - 4ture
+  - replace: "sort-by "
+    trigger: sortby
+  - replace: "| "
+    trigger: \]
+  - replace: $
+    trigger: 4§
+  - replace: "onefetch "
+    trigger: onfc
+  - replace: "{{output}}_"
+    trigger: 4-
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: 4§
+  - replace: .gitignore
+    trigger: .giti
+  - trigger: ga§
+    replace: git add
+  - trigger: gaa§
+    replace: git add --all 
+  - trigger: gb§
+    replace: git branch 
+  - trigger: gbr§
+    replace: git branch --remote
+  - trigger: gc§
+    replace: git commit -v 
+  - trigger: gc!§
+    replace: git commit -v --amend
+  - trigger: gca§
+    replace: git commit -v -a
+  - trigger: gcam§
+    replace: git commit -a -m 
+  - trigger: gcl§
+    replace: git config --list
+  - trigger: gco§
+    replace: git checkout 
+  - trigger: gcm§
+    replace: git commit -m 
+  - trigger: gd§
+    replace: git diff
+  - trigger: gf§
+    replace: git fetch
+  - trigger: gps§
+    replace: git push
+  - trigger: gl§
+    replace: git pull
+  - trigger: glg§
+    replace: git log --stat --color
+  - trigger: glgg§
+    replace: git log --graph --color
+  - trigger: glgga§
+    replace: git log --graph --decorate --all
+  - trigger: glgm§
+    replace: git log --graph --max-count=10
+  - trigger: glgp§
+    replace: git log --stat --color -p
+  - trigger: glo§
+    replace: git log --oneline --decorate --color
+  - trigger: glog§
+    replace: git log --oneline --decorate --color --graph
+  - trigger: gpd§
+    replace: git push --dry-run
+  - trigger: gsb§
+    replace: git status -sb
+  - trigger: gss§
+    replace: git status -s
+  - trigger: gst§
+    replace: git status
+  - replace: "&&"
+    triggers:
+      - 77§
+      - 77`
+  - replace: "cargo new --lib "
+    trigger: cgol
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: "cgo "
+  - replace: "fd --extension "
+    trigger: "fd -e "
+  - replace: "fd --hidden "
+    trigger: "fd -h "
+  - replace: "fd --no-ignore "
+    trigger: "fd -I "
+  - replace: "fd --exec "
+    trigger: "fd -x "
+  - replace: "fd --extension $|$ --exec "
+    trigger: "fd -ex "
+  - replace: "fd --list-details "
+    trigger: "fd -l "

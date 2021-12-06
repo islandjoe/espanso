@@ -1,0 +1,19 @@
+parent: default
+filter_class: co.fluder.FSNotes|com.googlecode.iterm2|com.apple.Safari|com.kanagacode.espresso
+matches:
+  - trigger: "t./"
+    replace: "this."
+  - trigger: "`js"
+    replace: "```js\n$|$\n```"
+  - trigger: "if)"
+    replace: "if ($|$)"
+  - trigger: "f) "
+    replace: "function() "
+  - trigger: "cr) "
+    replace: "constructor() {$|$}"
+  - trigger: clog)
+    replace: console.log($|$)
+  - trigger: "for)"
+    replace: "for (const $|$ of ) "
+  - trigger: co=
+    replace: "const $|$ = "

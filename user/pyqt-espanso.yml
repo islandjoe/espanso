@@ -1,0 +1,313 @@
+matches:
+  - replace: .value($|$)
+    trigger: .v)
+  - replace: "{{settings}}.value($|$)"
+    trigger: .sval
+    vars:
+      - type: match
+        name: settings
+        params:
+          trigger: .settings
+  - replace: .settings
+    trigger: .setg
+  - replace: qtc.QSettings('Arthur Kho', '$|$')
+    triggers:
+      - .QS
+      - .qset
+      - .settings
+  - replace: qtw
+    trigger: qw
+    word: true
+  - replace: qtc.QDir
+    trigger: .qdir
+  - replace: "{{dir}}.homePath()"
+    vars:
+      - name: dir
+        type: match
+        params:
+          trigger: .qdir
+    triggers:
+      - .home
+      - .path
+  - replace: qtw.QWidget()
+    triggers:
+      - .qtwid
+      - .qwid
+      - QW
+  - replace: .setWidget($|$)
+    triggers:
+      - .setwid
+      - .setwidget
+  - replace: PyQt5
+    triggers:
+      - p5§
+      - pyq5
+  - replace: .QApplication($|$)
+    trigger: .qapp
+  - replace: .setWindowTitle($|$)
+    trigger: .set win title
+  - replace: .show()
+    trigger: .sh)
+  - replace: "from $|$ import "
+    trigger: fr im
+  - replace: QtGui
+    triggers:
+      - qtgui
+      - QG
+  - replace: QtCore
+    triggers:
+      - qtcore
+      - QC
+  - replace: QMainWindow
+    triggers:
+      - QMW
+      - qmain
+  - replace: from {{output}} import QtWidgets as qtw
+    trigger: as qtw
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: pyq5
+  - replace: from {{output}} import QtGui as qtg
+    trigger: as qtg
+    vars:
+      - name: output
+        type: match
+        params:
+          params:
+            trigger: pyq5
+  - replace: from {{output}} import QtCore as qtc
+    trigger: as qtc
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: pyq5
+  - replace: .setCentralWidget($|$)
+    triggers:
+      - .setcenwi
+      - .setcentwi
+      - .setcentralwi
+  - replace: .setStatusBar($|$)
+    triggers:
+      - .setsta
+      - .setstab
+      - .setstatusbar
+  - replace: .statusBar()
+    triggers:
+      - .statb
+      - .statusbar
+  - replace: QStatusBar
+    triggers:
+      - qstat
+      - qstt
+  - replace: .showMessage
+    trigger: .showme
+  - replace: QLabel
+    trigger: qlab
+  - replace: .textChanged
+    trigger: .textchan
+  - replace: .setText($|$)
+    triggers:
+      - .setext
+      - .setxt
+      - .settext)
+  - replace: .toPlainText()
+    triggers:
+      - .toplaintxt
+      - .toplaintext
+  - replace: .addPermanentWidget($|$)
+    triggers:
+      - .addpermwid
+      - .addpermanentwidget
+  - replace: .addWidget($|$)
+    trigger: .addwidget
+  - replace: .insertPermanentWidget($|$)
+    triggers:
+      - .insertpermwid
+      - .insertpermanentwidget
+  - replace: .menuBar()
+    triggers:
+      - .menubar
+      - .mbar
+  - replace: .addMenu($|$)
+    trigger: .addmenu
+  - replace: .addAction($|$)
+    triggers:
+      - .addacn
+      - .addaxn
+      - .addaction
+  - replace: QAction($|$)
+    triggers:
+      - .QA)
+      - .qaction
+  - replace: .addToolBar($|$)
+    triggers:
+      - .addtb
+      - .addtoolbar
+  - replace: .setAllowedAreas($|$)
+    trigger: .setallowed
+  - replace: qtc.Qt.TopToolBarArea
+    triggers:
+      - toptool
+      - toptoolbararea
+  - replace: qtc.Qt.BottomToolBarArea
+    triggers:
+      - bottomtool
+      - bottomtoolbararea
+  - replace: .setMovable($|$)
+    trigger: .setmov
+  - replace: .setMovable($|$)
+    trigger: .setfont
+  - replace: .setCurrentFont($|$)
+    trigger: .getfont
+  - replace: .setFloatable($|$)
+    trigger: .setflo
+  - replace: .standardIcon(qtw.QStyle.$|$)
+    triggers:
+      - .stdicon
+      - .standardicon
+  - replace: .setIcon($|$)
+    trigger: .seticon
+  - replace: qtw.QStyle.SP_DialogHelpButton
+    triggers:
+      - dialoghelpbtn
+      - dialoghelpbutton
+  - replace: qtw.QStyle.SP_DirOpenIcon
+    trigger: diropenicon
+  - replace: qtw.QStyle.SP_DriveHDIcon
+    trigger: drivehdicon
+  - replace: .QDockWidget($|$)
+    triggers:
+      - .QDW
+      - .qdockwidget
+  - replace: .addDockWidget($|$, )
+    triggers:
+      - .addDW
+      - .addockwid
+      - .adddockwidget
+  - replace: qtc.Qt.LeftDockWidgetArea
+    triggers:
+      - .leftDWA
+      - .leftdockwidget
+  - replace: .setFeatures($|$)
+    triggers:
+      - .seatft
+      - .setfeature
+  - replace: qtw.QDockWidget.QDockWidgetMovable
+    triggers:
+      - .movableDW
+      - .mDW
+      - .movabledock
+  - replace: qtw.QDockWidget.DockWidgetFloatable
+    triggers:
+      - .floatableDW
+      - .fDW
+      - .floatabledock
+  - replace: .setLayout($|$)
+    trigger: .setlayout
+  - replace: qtw.QVBoxLayout
+    triggers:
+      - .boxlayout
+      - .qvbox
+  - replace: .addStretch()
+    trigger: .addstretch
+  - replace: qtw.QLineEdit(placeholderText='$|$')
+    triggers:
+      - .lineedit
+      - .qlineedit
+  - replace: qtw.QPushButton()
+    triggers:
+      - .qpushbtn
+      - .pushbtn
+      - .pushbutton
+      - .qpushbutton
+  - replace: .toPlainText()
+    trigger: .toplaintext
+  - replace: qtw.QMessageBox
+    trigger: .messagebox
+  - replace: "{{output}}.about(self, 'Window_Title', '$|$Main_Text')"
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: .messagebox
+    triggers:
+      - msgbox.about
+      - msgbx.about
+      - mbox.about
+  - replace: "{{msgbox}}.question(self, '$|$Title', 'Message')"
+    vars:
+      - name: msgbox
+        type: match
+        params:
+          trigger: .messagebox
+    triggers:
+      - msgbox.question
+      - .question
+  - replace: "{{msgbox}}.No"
+    trigger: msgbox.no
+    vars:
+      - name: msgbox
+        type: match
+        params:
+          trigger: .messagebox
+  - replace: "{{output}}.critical('$|$')"
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: .messagebox
+    triggers:
+      - msgbox.cri
+      - mbox.cri
+  - replace: qtw.QFileDialog
+    triggers:
+      - .qfiledialog
+      - .filedialog
+      - QFID
+      - .fid
+  - replace: "{{fontdg}}.getFont($|$, self)"
+    vars:
+      - name: fontdg
+        type: match
+    triggers:
+      - .font
+      - .cfont
+      - .currentfont
+  - replace: qtw.QFontDialog
+    triggers:
+      - .fod
+      - .qfontdialog
+      - .fontdialog
+      - QFOD
+  - replace: "{{filedialog}}.DontUseNativeDialog"
+    trigger: .nonativedialog
+    vars:
+      - name: filedialog
+        type: match
+        params:
+          trigger: .qfiledialog
+  - replace: "{{filedialog}}.DontResolveSymlinks"
+    trigger: .nosymlinks
+    vars:
+      - name: filedialog
+        type: match
+        params:
+          trigger: .qfiledialog
+  - replace: "{{output}}.getOpenFileName()"
+    trigger: .openfile
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: .qfiledialog
+  - replace: "{{output}}.getSaveFileName()"
+    trigger: .savefile
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: .qfiledialog
+filter_title: com.microsoft.VSCode

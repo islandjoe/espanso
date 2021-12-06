@@ -1,0 +1,11 @@
+filter_exec: "Nushell"
+matches:
+  - triggers: 
+      - 4true
+      - 4ture
+    replace: $true
+  - triggers: 
+      - 4false
+      - 4flse
+      - 4flase
+    replace: $false
