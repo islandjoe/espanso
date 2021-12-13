@@ -1,15 +1,23 @@
 parent: default
-filter_class: co.fluder.FSNotes|com.googlecode.iterm2|com.apple.Safari|com.kanagacode.espresso
+filter_class: co.fluder.FSNotes|com.googlecode.iterm2|com.apple.Safari|com.kanagacode.espresso|com.panic.Nova
 matches:
+  - trigger: addevtlstr)
+    replace: addEventListener($|$)
+  - trigger: "bgcolor:"
+    replace: "backgroundColor: "
   - trigger: "t./"
     replace: "this."
   - trigger: "`js"
     replace: "```js\n$|$\n```"
   - trigger: "if)"
     replace: "if ($|$)"
-  - trigger: "f) "
-    replace: "function() "
-  - trigger: "cr) "
+  - trigger: "fn)"
+    replace: "function $|$()"
+  - trigger: .img)
+    replace: .image($|$)
+  - triggers: 
+      - "cr) "
+      - ctor)
     replace: "constructor() {$|$}"
   - trigger: clog)
     replace: console.log($|$)

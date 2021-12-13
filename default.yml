@@ -1,4 +1,42 @@
 matches:
+  - trigger: opr`
+    replace: operator
+    propagate_case: true
+  - trigger: oprn`
+    replace: operation
+    propagate_case: true
+  - trigger: max`
+    replace: maximum
+    propagate_case: true
+  - trigger: min`
+    replace: minimum
+    propagate_case: true
+  - trigger: swicth
+    replace: switch
+    propagate_case: true
+  - trigger: str`
+    replace: string
+    propagate_case: true
+  - trigger: pos`
+    replace: position
+    propagate_case: true
+  - trigger: "ont` "
+    replace: "on the "
+    propagate_case: true
+  - trigger: "oft` "
+    replace: "of the "
+  - trigger: ass.`
+    replace: assignment
+    propagate_case: true
+  - trigger: repr`
+    replace: represent
+    propagate_case: true
+  - trigger: reprv`
+    replace: representative
+    propagate_case: true
+  - trigger: revn`
+    replace: revision
+    propagate_case: true
   - trigger: dimn`
     replace: dimension
     propagate_case: true
@@ -40,6 +78,12 @@ matches:
     propagate_case: true
   - trigger: bkup`
     replace: backup
+    propagate_case: true
+  - trigger: bg`
+    replace: background
+    propagate_case: true
+  - trigger: fg`
+    replace: foreground
     propagate_case: true
   - trigger: dir`
     replace: directory
@@ -115,9 +159,28 @@ matches:
     propagate_case: true
     replace: significant
     word: true
-  - trigger: dscrptn
+  - trigger: "//>> "
+    replace: "//-> "
+  - trigger: dict`
+    replace: dictionary
+    propagate_case: true
+  - trigger: dicts`
+    replace: dictionaries
+    propagate_case: true
+  - trigger: prop`
+    replace: property
+    propagate_case: true
+  - trigger: props`
+    replace: properties
+    propagate_case: true
+  - trigger: updt`
+    replace: update
+    propagate_case: true
+  - trigger: updtg`
+    replace: updating
+    propagate_case: true
+  - trigger: descn`
     replace: description
-    word: true
     propagate_case: true
   - trigger: descb`
     replace: describe
@@ -139,6 +202,12 @@ matches:
     propagate_case: true
   - trigger: valdt`
     replace: validate
+    propagate_case: true
+  - trigger: valdr`
+    replace: validator
+    propagate_case: true
+  - trigger: tpl`
+    replace: template
     propagate_case: true
   - trigger: avg`
     replace: average
@@ -279,7 +348,9 @@ matches:
   - trigger: lang`
     replace: language
     propagate_case: true
-  - trigger: grf`
+  - triggers: 
+      - grf`
+      - graf`
     replace: graph
     propagate_case: true
   - trigger: gfx`
@@ -303,6 +374,9 @@ matches:
     propagate_case: true
   - trigger: calct`
     replace: calculate
+    propagate_case: true
+  - trigger: calcg`
+    replace: calculating
     propagate_case: true
   - trigger: ML`
     replace: Machine Learning
@@ -368,6 +442,9 @@ matches:
     propagate_case: true
   - trigger: opt`
     replace: option
+    propagate_ncase: true
+  - trigger: optl`
+    replace: optional
     propagate_case: true
   - trigger: "dstnc "
     replace: distance
@@ -397,8 +474,8 @@ matches:
   - trigger: consdrtn`
     replace: consideration
     propagate_case: true
-  - trigger: t``
-    replace: "the "
+  - trigger: ttt
+    replace: the
     propagate_case: true
   - trigger: devops
     replace: DevOps
@@ -416,6 +493,19 @@ matches:
     replace: solution
   - trigger: cmd`
     replace: command
+    propagate_case: true
+  - trigger: rsrc`
+    replace: resource
+    propagate_case: true
+  - trigger: mkt`
+    replace: market
+    propagate_case: true
+  - trigger: mktg`
+    replace: marketing
+    propagate_case: true
+  - trigger: genr`
+    replace: generator
+    propagate_case: true
   - replace: relationship
     triggers: 
       - relnp`
@@ -467,17 +557,22 @@ matches:
     propagate_case: true
   - replace: frontend
     trigger: frontned
+    propagate_case: true
   - replace: hardware
     trigger: hw/
-    word: true
+    propagate_case: true
   - replace: knowledge
     trigger: knwldg
+    propagate_case: true
   - replace: something
-    trigger: smth
+    trigger: smth`
+    propagate_case: true
   - replace: demonstration
     trigger: demonstraten
+    propagate_case: true
   - replace: demonstrate
     trigger: demo`
+    propagate_case: true
   - replace: because
     triggers:
       - bcoz
@@ -499,12 +594,25 @@ matches:
   - trigger: commn`
     replace: communication
     propagate_case: true
-  - trigger: num`
+  - triggers: 
+      - num`
+      - nummm
     replace: number
     propagate_case: true
   - replace: engineering
     trigger: engg`
     propagate_case: true
+  - trigger: pls`
+    replace: please
+    propagate_case: true
+  - trigger: thru`
+    replace: through
+    propagate_case: true
+  - triggers: 
+      - err`
+      - errr
+    propagate_case: true
+    replace: error
   - replace: engineer
     trigger: engr`
     propagate_case: true
@@ -519,6 +627,27 @@ matches:
     propagate_case: true
   - trigger: var`
     replace: variable
+    propagate_case: true
+  - trigger: axs`
+    replace: access
+    propagate_case: true
+  - trigger: axsg`
+    replace: accessing
+    propagate_case: true
+  - trigger: init`
+    replace: initialize
+    propagate_case: true
+  - trigger: initg`
+    replace: initializing
+    propagate_case: true
+  - trigger: rmv`
+    replace: remove
+    propagate_case: true
+  - trigger: rmvg`
+    replace: removing
+    propagate_case: true
+  - trigger: rmvl`
+    replace: removal
     propagate_case: true
   - replace: evaluate
     trigger: evalt`
@@ -657,6 +786,31 @@ matches:
       - inxv`
       - ixv`
     replace: interactive
+    propagate_case: true
+  - trigger: activ
+    replace: active
+    word: true
+    propagate_case: true
+  - trigger: ref`
+    replace: reference
+    propagate_case: true
+  - trigger: fdbk`
+    replace: feedback
+    propagate_case: true
+  - trigger: co.`
+    replace: company
+    propagate_case: true
+  - trigger: dtl`
+    replace: detail
+    propagate_case: true
+  - trigger: authn`
+    replace: authentication
+    propagate_case: true
+  - trigger: autht`
+    replace: authenticate
+    propagate_case: true
+  - trigger: cos.`
+    replace: companies
     propagate_case: true
   - trigger: spvs`
     replace: supervise
@@ -912,6 +1066,9 @@ matches:
     propagate_case: true
   - trigger: secs`
     replace: seconds
+    propagate_case: true
+  - trigger: dgnr`
+    replace: deginer
     propagate_case: true
   - trigger: dgn`
     replace: design
