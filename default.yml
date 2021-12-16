@@ -696,6 +696,8 @@ matches:
     trigger: "`rs "
   - replace: "```python\n$|$\n```"
     trigger: "`py "
+  - trigger: "`sh "
+    replace: "```bash\n$|$\n```"
   - replace: receive
     trigger: rcv`
     propagate_case: true
