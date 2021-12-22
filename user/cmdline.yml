@@ -1,6 +1,18 @@
 backend: Auto
-filter_title: com.googlecode.iterm2|co.zeit.hyper|com.apple.Safari
+filter_title: com.googlecode.iterm2|co.zeit.hyper|com.apple.Safari|com.panic.Nova
 matches:
+  - trigger: "suvi "
+    replace: "sudo vim "
+  - trigger: mpas`
+    replace: "multipass "
+  - trigger: mpasls`
+    replace: "multipass list"
+  - trigger: "mpip "
+    replace: "python -m pip "
+  - trigger: "mpipi "
+    replace: "python -m pip install "
+  - trigger: "mvenv"
+    replace: "python -m venv .venv"
   - replace: "floaterm "
     trigger: ft/
   - replace: ":FloatermNew "

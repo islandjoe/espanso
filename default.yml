@@ -1,4 +1,10 @@
 matches:
+  - trigger: ls`
+    replace: list
+    propagate_case: true
+  - trigger: lsg`
+    replace: listing
+    propagate_case: true
   - trigger: opr`
     replace: operator
     propagate_case: true
