@@ -1,3 +1,4 @@
+parent: default
 matches:
   - trigger: .iserr
     replace: .is_err().unwrap()
@@ -57,16 +58,16 @@ matches:
     triggers:
       - 7str
       - str7
+  - trigger: "7fmt1"
+    replace: "&format!($|$)"
   - replace: BufReader
     trigger: bufr;
   - replace: format!("{}", $|$)
-    trigger: fmt!
-  - replace: fn $|$()
-    trigger: fn)
+    trigger: "fmt1"
+  - replace: "pub fn $|$() "
+    trigger: "pfn)"
   - replace: "fn main() {\n$|$"
-    triggers:
-      - fnm/
-      - main`
+    trigger: "fnmain)"
   - replace: io::stdin()
     trigger: stdin)
   - replace: let mut $|$;
@@ -182,10 +183,8 @@ matches:
         type: match
         params:
           trigger: sc/
-  - replace: "pub fn "
-    triggers:
-      - pfn/
-      - "pfn "
+  - replace: "pub fn $|$() "
+    trigger: "pfn)"
   - replace: "|$|$|"
     trigger: "||"
   - replace: usize

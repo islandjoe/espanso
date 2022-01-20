@@ -1,6 +1,20 @@
 backend: Auto
-filter_title: com.googlecode.iterm2|co.zeit.hyper|com.apple.Safari|com.panic.Nova
+filter_title: com.googlecode.iterm2|co.zeit.hyper|com.apple.Safari|com.panic.Nova|com.sublimetext.4
 matches:
+  - trigger: "dccon "
+    replace: "docker container "
+  - trigger: "Dfl`"
+    replace: Dockerfile
+  - trigger: "dcimg "
+    replace: "docker image "
+  - trigger: "suap upd "
+    replace: "sudo apt update"
+  - trigger: "suap upg "
+    replace: "sudo apt upgrade"
+  - trigger: dc`
+    replace: "docker "
+  - trigger: sap`
+    replace: "sudo apt "
   - trigger: "suvi "
     replace: "sudo vim "
   - trigger: mpas`
@@ -17,8 +31,24 @@ matches:
     trigger: ft/
   - replace: ":FloatermNew "
     trigger: :ftn
+  - replace: "multipass shell"
+    trigger: mpass`
+  - trigger: mpasp`
+    replace: "multipass purge"
+  - trigger: mpassh`
+    replace: "multipass shell "
+  - trigger: "sapt`"
+    replace: "sudo apt "
   - replace: :PlugUpdate
     trigger: :plugup
+  - trigger: "d-cx`"
+    replace: "docker-compose exec "
+  - trigger: "mpasx`"
+    replace: "multipass exec $|$ -- "
+  - trigger: "h-d`"
+    replace: "habita-dev"
+  - trigger: "d-c`"
+    replace: "docker-compose "
   - replace: ":PlugInstall "
     trigger: :plugins
   - replace: ":CocCommand "

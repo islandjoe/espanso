@@ -1,4 +1,30 @@
 matches:
+  - trigger: "ht://"
+    replace: "http://"
+  - trigger: "hts://"
+    replace: "https://"
+  - trigger: "127001"
+    replace: "127.0.0.1"
+  - trigger: dfn`
+    replace: define
+    propagate_case: true
+  - trigger: dfnn`
+    replace: definition
+    propagate_case: true
+  - trigger: doc`
+    replace: document
+    propagate_case: true
+  - trigger: docn`
+    replace: documentation
+  - trigger: docg`
+    replace: documenting
+  - trigger: ":today"
+    replace: "{{its_today}}"
+    vars:
+      - name: its_today
+        type: date
+        params:
+          format: "%d.%m.%Y"
   - trigger: ls`
     replace: list
     propagate_case: true
@@ -94,6 +120,9 @@ matches:
   - trigger: dir`
     replace: directory
     propagate_case: true
+  - trigger: dirv`
+    replace: directive
+    propagate_case: true
   - trigger: locn`
     replace: location
     propagate_case: true
@@ -132,6 +161,11 @@ matches:
     propagate_case: true
   - trigger: rdg`
     replace: reading
+  - trigger: rdrs`
+    replace: readers
+    propagate_case: true
+  - trigger: rdr`
+    replace: reader
     propagate_case: true
   - trigger: rdr`
     replace: reader
@@ -179,8 +213,16 @@ matches:
   - trigger: props`
     replace: properties
     propagate_case: true
-  - trigger: updt`
+  - triggers: 
+      - updt`
+      - upd`
     replace: update
+    propagate_case: true
+  - trigger: upgd`
+    replace: upgrade
+    propagate_case: true
+  - trigger: sxn`
+    replace: section
     propagate_case: true
   - trigger: updtg`
     replace: updating
@@ -395,7 +437,7 @@ matches:
   - trigger: orgz`
     replace: organize
     propagate_case: true
-  - trigger: orgzg`
+  - trigger: orgg`
     replace: organizing
     propagate_case: true
   - trigger: org`
@@ -437,7 +479,7 @@ matches:
   - trigger: enuf`
     replace: enough
     propagate_case: true
-  - trigger: pt`
+  - trigger: pt.`
     replace: point
     propagate_case: true
   - trigger: ptr`
@@ -480,9 +522,10 @@ matches:
   - trigger: consdrtn`
     replace: consideration
     propagate_case: true
-  - trigger: ttt
-    replace: the
+  - trigger: "t "
+    replace: "the "
     propagate_case: true
+    word: true
   - trigger: devops
     replace: DevOps
     word: true
@@ -538,8 +581,18 @@ matches:
   - replace: strategy
     propagate_case: true
     trigger: strat`
-  - trigger: ft`
+  - triggers: 
+      - ft`
+      - feat`
     replace: feature
+    propagate_case: true
+  - triggers: 
+      - "sched "
+      - "sched."
+    replace: schedule
+    propagate_case: true
+  - trigger: "repo`"
+    replace: repository
     propagate_case: true
   - trigger: strats`
     replace: strategies
@@ -560,6 +613,9 @@ matches:
     propagate_case: true
   - trigger: pkg`
     replace: package
+    propagate_case: true
+  - trigger: pkgg`
+    replace: packaging
     propagate_case: true
   - replace: frontend
     trigger: frontned
@@ -704,6 +760,8 @@ matches:
     trigger: "`py "
   - trigger: "`sh "
     replace: "```bash\n$|$\n```"
+  - trigger: "`yml "
+    replace: "```yaml\n$|$\n```"
   - replace: receive
     trigger: rcv`
     propagate_case: true
@@ -730,12 +788,19 @@ matches:
   - replace: +
     trigger: =§
   - replace: "{{filename}}"
+    trigger: t.,
+    vars:
+      - name: filename
+        type: date
+        params:
+          format: "%b %d %Y"
+  - replace: "{{filename}}"
     trigger: t,.
     vars:
       - name: filename
         type: date
         params:
-          format: "%Y%m%d.%H%M.%S"
+          format: "%Y.%m.%d.%H%M"
   - trigger: fmt`
     replace: format
     propagate_case: true
@@ -889,6 +954,9 @@ matches:
   - trigger: mng`
     replace: manage
     propagate_case: true
+  - trigger: config`
+    replace: configuration
+    propagate_case: true
   - trigger: mgg`
     replace: managing
     propagate_case: true
@@ -977,7 +1045,7 @@ matches:
   - trigger: ctlg`
     replace: controlling
     propagate_case: true
-  - trigger: btwn`
+  - trigger: betw`
     replace: between
     propagate_case: true
   - replace: difference
